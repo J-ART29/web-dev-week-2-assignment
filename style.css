@@ -51,4 +51,128 @@ input {
     margin-bottom: 15px;
     box-sizing: border-box;
 }
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+/* Sections */
+.add-expense-section,
+.expenses-section,
+.instructions,
+.video-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Focus selector */
+input:focus,
+select:focus {
+    outline: 2px solid #666;
+}
+
+/* Negation pseudo-class */
+input:not([type="date"]) {
+    background-color: #fafafa;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #555;
+}
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Descendant selector */
+.expenses-section td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Table headers */
+.expenses-section th {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
+
+/* Alternating rows */
+.expenses-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* First row selector */
+.expenses-section tr:first-child {
+    font-weight: bold;
+}
+
+/* Table row hover */
+.expenses-section tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Details section */
+details {
+    padding: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Video */
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+```
 
